@@ -2,7 +2,6 @@
 //  CheckBox.swift
 //  Grocery_List_v2
 //
-//  Created by Sarah Chow on 2023-02-21.
 //
 //  Pulled from and credit due to https://stackoverflow.com/questions/58425829/how-can-i-create-a-text-with-checkbox-in-swiftui
 //

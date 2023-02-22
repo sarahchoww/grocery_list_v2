@@ -2,7 +2,6 @@
 //  ItemDetail.swift
 //  Grocery_List_v2
 //
-//  Created by Sarah Chow on 2023-02-21.
 //
 
 import SwiftUI
@@ -23,6 +22,7 @@ struct ItemDetail: View {
             TextField(item.description, text: $itemDes)
                 .multilineTextAlignment(.center)
             
+            Spacer()
             Button{
                 saveDes()
             } label:{
@@ -38,7 +38,7 @@ struct ItemDetail: View {
         if (itemDes == ""){
             return
         }
-        
+                
         modelData.groceries[groceryIndex].items[item.id - 1].description = itemDes
         
     }

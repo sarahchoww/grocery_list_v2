@@ -2,7 +2,6 @@
 //  GroceryDetail.swift
 //  Grocery_List_v2
 //
-//  Created by Sarah Chow on 2023-02-21.
 //
 
 import SwiftUI
@@ -64,8 +63,14 @@ struct GroceryDetail: View {
     }
     
     func addNewItem(){
-        let newItem = Item(id: modelData.groceries[groceryIndex].items
-            .last!.id + 1, name: itemName, price: itemPrice, description: itemDes)
+        
+        var arrayIndexAppend: Int = 1
+        
+        if (modelData.groceries[groceryIndex].items.count != 0){
+            arrayIndexAppend = modelData.groceries[groceryIndex].items.last!.id + 1
+        }
+        
+        let newItem = Item(id: arrayIndexAppend, name: itemName, price: itemPrice, description: itemDes)
         
         if (itemName == "" || itemPrice == 0.00 || itemDes == ""){
             return
