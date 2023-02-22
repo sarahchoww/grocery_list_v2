@@ -52,7 +52,7 @@ struct GroceryDetail: View {
             ForEach(grocery.items, id: \.self){ item in
                 
                 NavigationLink{
-                    ItemDetail(item: item)
+                    ItemDetail(item: item, groceryIndex: groceryIndex)
                 } label: {
                     ItemRow(item: item)
                 }
