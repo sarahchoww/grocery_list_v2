@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ItemDetail: View {
     
-    var item: Grocery.Item
+    var item: Item
     
     var body: some View {
-        Text(item.name)
+        Text(item.description)
+        
+        
+        
     }
 }
 

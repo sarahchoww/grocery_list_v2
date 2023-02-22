@@ -10,14 +10,28 @@ import SwiftUI
 struct GroceryList: View {
     
     @EnvironmentObject var modelData: ModelData
+    @State private var name: String = ""
+    @State private var date: String = "current date"
+
     
     var groceries: [Grocery] {
         modelData.groceries
     }
     
     var body: some View {
+            
         NavigationView {
             List {
+                
+                HStack {
+                    TextField("Name", text: $name)
+                    
+                    Button{
+                        addNewList()
+                    } label: {
+                        Text("Add List")
+                    }
+                }
                 
                 ForEach(groceries){ grocery in
                     NavigationLink {
@@ -36,6 +50,12 @@ struct GroceryList: View {
         }
     }
     
+    func addNewList(){
+        let newList = Grocery(id: modelData.groceries.last!.id + 1, name: self.name, date: self.date, items: [])
+        
+        modelData.groceries.append(newList)
+        
+    }
     
 }
 

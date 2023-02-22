@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemRow: View {
     
     @State private var checked = false
-    var item: Grocery.Item
+    var item: Item
     
     var body: some View {
         HStack{

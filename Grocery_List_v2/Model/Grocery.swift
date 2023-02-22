@@ -14,12 +14,12 @@ struct Grocery: Hashable, Codable, Identifiable {
     var name: String
     var date: String
     var items: [Item]
-
-    struct Item: Hashable, Codable, Identifiable {
-        var id: Int
-        var name: String
-        var price: Float
-        var description: String
-    }
     
+}
+
+struct Item: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var price: Float
+    var description: String
 }
