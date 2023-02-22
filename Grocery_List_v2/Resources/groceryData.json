@@ -5,19 +5,19 @@
         "date": "Jan 22 2022",
         "items": [
             {
-                "id": "a",
+                "id": 1,
                 "name": "Bread",
                 "price": 4,
                 "description": "Oat and Honey"
             },
             {
-                "id": "b",
+                "id": 2,
                 "name": "Egg",
                 "price": 5,
                 "description": "Dozen pack"
             },
             {
-                "id": "c",
+                "id": 3,
                 "name": "Oatmeal",
                 "price": 6,
                 "description": "Quick Oats"
@@ -30,19 +30,19 @@
         "date": "Jan 21 2022",
         "items": [
             {
-                "id": "d",
+                "id": 1,
                 "name": "Beef",
                 "price": 8,
                 "description": "Leaf beef"
             },
             {
-                "id": "e",
+                "id": 2,
                 "name": "Yogurt",
                 "price": 3,
                 "description": "Strawberry"
             },
             {
-                "id": "f",
+                "id": 3,
                 "name": "Snacks",
                 "price": 5,
                 "description": "Gummy worms"

@@ -9,16 +9,21 @@ import SwiftUI
 
 struct ItemRow: View {
     
+    @State private var checked = false
     var item: Grocery.Item
     
     var body: some View {
-        Text(item.name)
+        HStack{
+            CheckboxView(checked: $checked)
+            Text(item.name)
+
+        }
         
     }
 }
 
 struct ItemRow_Previews: PreviewProvider {
     static var previews: some View {
-        ItemRow(item: groceries[0].items[0])
+        ItemRow(item: ModelData().groceries[0].items[0])
     }
 }

@@ -7,7 +7,10 @@
 
 import Foundation
 
-var groceries: [Grocery] = load("groceryData.json")
+final class ModelData: ObservableObject {
+    @Published var groceries: [Grocery] = load("groceryData.json")
+    // To publish changes to its data
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

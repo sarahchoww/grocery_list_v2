@@ -19,6 +19,7 @@
 		85BE35DA29A5C9DE00D35777 /* GroceryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE35D929A5C9DE00D35777 /* GroceryRow.swift */; };
 		85BE35DC29A5CEA900D35777 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE35DB29A5CEA900D35777 /* ItemDetail.swift */; };
 		85BE35DE29A5CEB200D35777 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE35DD29A5CEB200D35777 /* ItemRow.swift */; };
+		85BE35E029A5D17800D35777 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE35DF29A5D17800D35777 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		85BE35D929A5C9DE00D35777 /* GroceryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRow.swift; sourceTree = "<group>"; };
 		85BE35DB29A5CEA900D35777 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		85BE35DD29A5CEB200D35777 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		85BE35DF29A5D17800D35777 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				85BE35D929A5C9DE00D35777 /* GroceryRow.swift */,
 				85BE35DB29A5CEA900D35777 /* ItemDetail.swift */,
 				85BE35DD29A5CEB200D35777 /* ItemRow.swift */,
+				85BE35DF29A5D17800D35777 /* CheckBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				85BE35D829A5C9D600D35777 /* GroceryDetail.swift in Sources */,
 				85BE35C129A5C79700D35777 /* ContentView.swift in Sources */,
 				85BE35D329A5C86400D35777 /* Grocery.swift in Sources */,
+				85BE35E029A5D17800D35777 /* CheckBox.swift in Sources */,
 				85BE35D629A5C94B00D35777 /* GroceryList.swift in Sources */,
 				85BE35DA29A5C9DE00D35777 /* GroceryRow.swift in Sources */,
 				85BE35DC29A5CEA900D35777 /* ItemDetail.swift in Sources */,

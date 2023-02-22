@@ -18,6 +18,6 @@ struct ItemDetail: View {
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDetail(item: groceries[0].items[0])
+        ItemDetail(item: ModelData().groceries[0].items[0])
     }
 }

@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct GroceryList: View {
-        
+    
+    @EnvironmentObject var modelData: ModelData
+    
+    var groceries: [Grocery] {
+        modelData.groceries
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -21,14 +27,21 @@ struct GroceryList: View {
                         GroceryRow(grocery: grocery)
                     }
                 }
+                .onDelete(){ indexSet in
+                    modelData.groceries.remove(atOffsets: indexSet)
+                }
+
             }
-            
+
         }
     }
+    
+    
 }
 
 struct GroceryList_Previews: PreviewProvider {
     static var previews: some View {
         GroceryList()
+            .environmentObject(ModelData())
     }
 }

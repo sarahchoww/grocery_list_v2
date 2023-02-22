@@ -16,7 +16,7 @@ struct Grocery: Hashable, Codable, Identifiable {
     var items: [Item]
 
     struct Item: Hashable, Codable, Identifiable {
-        var id: String
+        var id: Int
         var name: String
         var price: Float
         var description: String

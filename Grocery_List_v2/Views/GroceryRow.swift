@@ -24,6 +24,6 @@ struct GroceryRow_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        GroceryRow(grocery: groceries[0])
+        GroceryRow(grocery: ModelData().groceries[0])
     }
 }
